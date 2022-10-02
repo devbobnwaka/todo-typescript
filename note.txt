@@ -1,0 +1,13 @@
+To work with Typescript
+To use typescript you should have node install
+- run npm init -y
+- npm i --save-dev typescript //coz it wont run in production
+- npx tsc --init // to create a boilerplate tsc config file
+- create the src folder(for your typescript file) and dist folder(for your javascript file)
+- In the package.json file add this to the script "start": "tsc --watch" to always watch and convert your ts file to js file
+- set the 'outdir' in the tsconfig.json file to direct where the js files should be stored in this project in the dist folder.
+
+
+For easier configuration
+run npx create-snowpack-app . --template @snowpack/app-template-blank-typescript
+NOTE: there are other option used to start a typescript project.
